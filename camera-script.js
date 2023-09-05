@@ -129,7 +129,7 @@ function download_csv(){
     hiddenElement.target = '_blank';
     
     //provide the name for the CSV file to be downloaded
-    hiddenElement.download = 'gaitData.csv';
+    hiddenElement.download = txt+'gaitData.csv';
     hiddenElement.click();
 }
 
