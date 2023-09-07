@@ -37,10 +37,9 @@ const config ={
 
 
 
-function resetParam(button)
+function resetParam()
 {
-     
-    //window.location.reload();
+    
     min = 0;
     sec = 0;
     document.getElementById('time').innerHTML=min+":"+sec;
@@ -48,7 +47,9 @@ function resetParam(button)
     e.value = "No";
     txt = "No";
     bezier_points = [];
-    console.log(bezier_points);
+    //console.log(bezier_points);
+	 
+    window.location.reload();
 }
 
 function setParam(button)
@@ -148,7 +149,7 @@ async function main()
     }
 
     resetBttn.onclick = function(){
-        resetParam(setBttn)
+        resetParam()
     }
 
     download.onclick = function(){
