@@ -189,14 +189,14 @@ async function main()
 
 
     //Text in canvas
-    ctx_curveL.font = "50px Comic Sans MS";
-    ctx_curveL.fillStyle = "red";
-    ctx_curveL.fillText("Left Leg", 400, 50);
+    ctx_curveL.font = "35px Comic Sans MS";
+    ctx_curveL.fillStyle = "#6d5ee2";
+    ctx_curveL.fillText("Left Leg Pattern", 350, 50);
 
     
-    ctx_curveR.font = "50px Comic Sans MS";
-    ctx_curveR.fillStyle = "red";
-    ctx_curveR.fillText("Right Leg", 400, 50);
+    ctx_curveR.font = "35px Comic Sans MS";
+    ctx_curveR.fillStyle = "#6d5ee2";
+    ctx_curveR.fillText("Right Leg Pattern", 350, 50);
 
     video.addEventListener("play",computeFrame);
 }

@@ -13,6 +13,10 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: large;
+        }
+        #block-2 #lab{
+            font-size: large;
         }
 
         #cap {
@@ -25,15 +29,20 @@
             border: none;
             text-align: center;
             border-radius: 5px;
+            font-size: large;
         }
 
         .curve {
             border: 1px solid black;
             margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         #heading {
             text-align: center;
+            background-color: #6d5ee2;
+            color: snow;
+            word-spacing: 5mm;
         }
 
         #pose-video {
@@ -85,6 +94,7 @@
             padding: 2px;
             margin: 8px 0;
             width: auto;
+            font-size: large;
         }
 
         #block-2 {
@@ -104,18 +114,20 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: large;
         }
 
 
         #block-2 button {
             width: 40%;
-            background-color: #4CAF50;
+            background-color: red;
             color: white;
             padding: 10px 10px;
             margin: 10px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: large;
         }
 
         #block-2 label {
@@ -134,39 +146,18 @@
 
         #block-3 td {
             padding: 6px;
-            font-size: 14px;
+            font-size: large;
         }
 
         #block-3 th {
             padding: 6px;
             text-align: left;
+            font-size: large;
         }
 
-        @media screen and (max-width: 480px) {
-
-
-            #container-1 {
-                float: None;
-                width: 100%;
-                padding: 5px;
-            }
-
-            #block-1 {
-                width: 100%;
-            }
-
-            #container-2 {
-                float: inline-end;
-                width: 100%;
-                padding: 5px;
-            }
-
-            #container-3 {
-                float: None;
-                width: 100%;
-                padding: 5px;
-            }
-        }
+        
+            
+        
     </style>
 
     <title>Gait Analysis</title>
@@ -187,7 +178,7 @@
 
 <body>
 
-    <h1 id="heading">GAIT ANALYSIS</h1>
+    <h1 id="heading">GAIT PATTERN ANALYSIS</h1>
 
     <div id="frame">
         <div id="container-1">
@@ -198,19 +189,19 @@
         <div id="container-2">
 
             <div id="block-1">
-                <h2 id="time">0:0</h3>
-                    <button type="button" id="dow">Download CSV File</button>
+                <h2 id="time" style="font-size: larger;">0:0</h3>
+                    <button type="button" id="dow">Download Gait Data</button>
             </div>
 
 
             <div id="block-2">
-                <label>Walking direction:</label>
+                <label id="lab">Walking direction:</label>
                 <select id="dir" onchange="change()" autofocus="autofocus" required>
                     <option value="No" selected="selected">Select</option>
                     <option value="LR">Left to Right</option>
                     <option value="RL">Right to Left</option>
                 </select><br>
-                <button type="button" id="bttn3">Start</button>
+                <button type="button" id="bttn3" style="background-color: #4CAF50;">Start</button>
                 <button type="button" id="bttn4">Reset</button>
             </div>
 
